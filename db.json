@@ -1,11 +1,47 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
+  "addTask": {
+    code: 200,
+    data: "success",
+    msg: 'add successfully'
+  }
+  "updateTask": {
+    code: 200,
+    data: "success",
+    msg: 'update successfully'
+  },
+  "delTask": {
+    code: 200,
+    data: "success",
+    msg: 'delete successfully'
+  }
+  "getTaskList": {
+    code: 200,
+    data: {
+    taskList:[
+        {
+            id: '1',
+            taskName: 'test1',
+            taskDesc: 'des1',
+            taskStatus: false
+        },
+        {
+            id: '2',
+            taskName: 'test2',
+            taskDesc: 'des3',
+            taskStatus: true
+        },
+        {
+            id: '3',
+            taskName: 'test3',
+            taskDesc: 'des3',
+            taskStatus: false
+        },
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
+  },
+  "login": {
+    code: 200,
+    data: "success",
+    msg: 'login successfully'
   }
 }
